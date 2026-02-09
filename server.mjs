@@ -4,7 +4,8 @@ import app from './src/app.mjs';
 dotenv.config(); 
 // This line loads environment variables from a .env file into process.env, allowing you to access them in your application.
 
-const PORT= process.env.PORT || 5000;
+const PORT = process.env.APP_PORT || 5000;
+
 app.listen(PORT,()=>{
     console.log(`Server is running on port ${PORT}`);
 }) 
